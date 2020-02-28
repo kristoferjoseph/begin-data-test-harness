@@ -6,6 +6,7 @@ sing-4ci
 @http
 get /logout
 get /login
+get /one
 
 @tables
 data
