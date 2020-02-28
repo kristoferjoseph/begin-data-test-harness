@@ -7,6 +7,7 @@ sing-4ci
 get /logout
 get /login
 get /one
+get /okay
 
 @tables
 data
