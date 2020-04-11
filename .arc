@@ -4,10 +4,10 @@ sing-4ci
 @static
 
 @http
-get /logout
-get /login
-get /one
-get /okay
+get /keyboards
+get /keyboards/:keyboardID
+post /keyboards
+post /keyboards/delete
 
 @tables
 data
