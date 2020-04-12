@@ -7,6 +7,9 @@
   <title>Mechanical Keyboard Ratings</title>
   <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" rel="icon" type="image/x-icon">
   <style>
+    .min-width5 {
+      min-width: 5rem;
+    }
     .min-width20 {
       min-width: 20rem;
     }
@@ -14,10 +17,13 @@
       display: flex;
     }
     .flex-end {
-      align-items: flex-end;
+      justify-content: flex-end;
     }
     .space-between {
       justify-content: space-between;
+    }
+    .display-inline-block {
+      display: inline-block;
     }
   </style>
 </head>
@@ -30,33 +36,66 @@
     style="
       display: flex;
       flex-direction: column;
+      max-width: 20rem;
     "
   >
     <label class="display-flex space-between" for="name">
-      Name:
+      <b class="min-width5">
+        Name
+      </b>
       <input name="name" type="text">
     </label>
     <label class="display-flex space-between" for="keys">
-      Number of keys:
+      <b class="min-width5">
+        Number of keys
+      </b>
       <input name="number" type="number">
     </label>
     <label class="display-flex space-between" for="price">
-      Cost:
+      <b class="min-width5">
+        Cost
+      </b>
       <input name="cost" type="number" />
     </label>
     <label class="display-flex space-between" for="rating">
-      Rating:
+      <b class="min-width5">
+        Rating
+      </b>
       <div>
-        <input name=rating type="radio" value=0>
-        <input name=rating type="radio" value=1>
-        <input name=rating type="radio" value=2>
-        <input name=rating type="radio" value=3>
-        <input name=rating type="radio" value=4>
-        <input name=rating type="radio" value=5>
+        <input
+          name=rating
+          type="radio"
+          value=0
+        >
+        <input
+          name=rating
+          type="radio"
+          value=1
+        >
+        <input
+          name=rating
+          type="radio"
+          value=2
+        >
+        <input
+          name=rating
+          type="radio"
+          value=3
+        >
+        <input
+          name=rating
+          type="radio"
+          value=4
+        >
+        <input
+          name=rating
+          type="radio"
+          value=5
+        >
       </div>
     </label>
     <div class="display-flex flex-end">
-      <button style="width: 10rem">Save</button>
+      <button class="display-inline-block">Save</button>
     </div>
   </form>
   <script type="module" src="index.js"></script>

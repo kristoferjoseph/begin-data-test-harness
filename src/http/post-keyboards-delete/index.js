@@ -3,7 +3,7 @@ const arc = require('@architect/functions')
 
 exports.handler = async function http (req) {
   let body = arc.http.helpers.bodyParser(req)
-  let removed = data.destroy({
+  let removed = await data.destroy({
     ...body
   })
   return {
